@@ -10,7 +10,6 @@ def opencv_test():
     (h, w, d) = img.shape
     print("width={}, height={}, depth={}".format(w, h, d))
     resize_and_rotate(img)
-   
 
 def resize_and_rotate(img):   
     img = cv2.resize(img, (200, 200))
