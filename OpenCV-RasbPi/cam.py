@@ -8,7 +8,7 @@ import cv2
 def obscure_frame(frame):
     frame = cv2.resize(frame, (200, 200))
     frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-    cv2.blur(frame, (30, 30)) 
+    frame = cv2.blur(frame, (30, 30)) 
     return frame
 
 def cam_capture():
